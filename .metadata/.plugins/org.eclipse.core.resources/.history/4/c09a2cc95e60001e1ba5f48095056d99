@@ -1,0 +1,67 @@
+package register;
+
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+import java.sql.*;
+
+public class RegisterServlet extends HttpServlet {
+    // Initialize your database connection here
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
+        String confirmPassword = request.getParameter("confirmPassword");
+        
+        String jdbcURL = "jdbc:mysql://localhost:3306/reg";
+        String dbUser = "root";
+        String dbPassword = "Deva@123";
+
+        if (username.isEmpty() || password.isEmpty() || confirmPassword.isEmpty()) {
+            response.getWriter().write("All fields must be filled out");
+            return;
+        }
+
+        if (!password.equals(confirmPassword)) {
+            response.getWriter().write("Passwords do not match");
+            return;
+        }
+
+        // Database connection and registration logic
+        try {
+            // Establish a database connection (You should configure your database connection here)
+
+            Connection connection = DriverManager.getConnection(jdbcURL, dbUser, dbPassword);
+            // Prepare a SQL query to check if the username already exists
+            String checkQuery = "SELECT username FROM user WHERE username = ?";
+
+            // Prepare a SQL query to insert a new user
+            String insertQuery = "INSERT INTO user (username, password) VALUES (?, ?)";
+
+            // Use PreparedStatement for security
+            PreparedStatement checkStatement = connection.prepareStatement(checkQuery);
+            checkStatement.setString(1, username);
+
+            ResultSet result = checkStatement.executeQuery();
+
+            if (result.next()) {
+                response.getWriter().write("Username already exists");
+            } else {
+                // The username is unique; proceed with registration
+                PreparedStatement insertStatement = connection.prepareStatement(insertQuery);
+                insertStatement.setString(1, username);
+                insertStatement.setString(2, password);
+
+                insertStatement.executeUpdate();
+
+                response.getWriter().write("Registration successful!");
+            }
+
+            // Close the database connection
+
+        } catch (SQLException e) {
+            // Handle any database errors
+        }
+    }
+}
+

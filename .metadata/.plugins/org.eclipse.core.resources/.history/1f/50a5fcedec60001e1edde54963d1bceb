@@ -1,0 +1,111 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<style>
+		.container {
+	max-width:100%;
+    width: 700px;
+    height:450px;
+    margin: 0 auto;
+    margin-top:75px;
+    padding:20px;
+    border: 1px solid #ccc;
+    /*background-color:black;*/
+  	background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+}
+.box{
+	display:flex;
+}
+
+form{
+flex:50%;
+margin-top:50px;
+}
+.image-container{
+	flex:50%;
+}
+
+img{
+width:300px;
+height:350px;
+}
+
+
+h2 {
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 80%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom:20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    margin-top: 15px;
+}
+		
+        body {
+            background-image: url(https://static.pexels.com/photos/531880/pexels-photo-531880.jpeg);
+            background-size: cover; 
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+        <h2>Login</h2>
+        <div class="box">
+        <form action="Loginservlet" method="post">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button><br>
+            <p>Don't have an account? <a href="reg.jsp">Register here</a></p>
+        </form>
+        
+        <div class="image-container">
+            <img src="https://i.pinimg.com/736x/6b/1b/22/6b1b22573f9f3d4bba11a9fa5cb45652.jpg" alt="Image 1">
+        </div>
+        </div>
+    </div>
+</body>
+</html>

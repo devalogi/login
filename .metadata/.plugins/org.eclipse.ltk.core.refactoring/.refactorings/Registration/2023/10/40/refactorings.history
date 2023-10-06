@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;registrationFailure.jsp&apos; to &apos;Registration&apos;" description="Move &apos;registrationFailure.jsp&apos; to &apos;Registration&apos;" destination="/Registration" element1="/login/src/main/webapp/registrationFailure.jsp" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1696222484351" updateReferences="true"/>
+</session>

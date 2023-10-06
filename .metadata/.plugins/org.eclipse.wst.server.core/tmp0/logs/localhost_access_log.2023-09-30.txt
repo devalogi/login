@@ -1,0 +1,16 @@
+127.0.0.1 - - [30/Sep/2023:21:56:09 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [30/Sep/2023:21:56:12 +0530] "GET /RegisterForm/reg.jsp HTTP/1.1" 200 546
+0:0:0:0:0:0:0:1 - - [30/Sep/2023:21:56:13 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [30/Sep/2023:21:56:31 +0530] "POST /RegisterForm/RegisterServlet HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [30/Sep/2023:21:56:32 +0530] "GET /RegisterForm/registrationSuccess.jsp HTTP/1.1" 200 163
+0:0:0:0:0:0:0:1 - - [30/Sep/2023:21:56:58 +0530] "POST /RegisterForm/RegisterServlet HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [30/Sep/2023:21:56:58 +0530] "GET /RegisterForm/registrationSuccess.jsp HTTP/1.1" 200 163
+0:0:0:0:0:0:0:1 - - [30/Sep/2023:21:58:06 +0530] "POST /RegisterForm/RegisterServlet HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [30/Sep/2023:21:58:06 +0530] "GET /RegisterForm/registrationSuccess.jsp HTTP/1.1" 200 163
+0:0:0:0:0:0:0:1 - - [30/Sep/2023:21:58:25 +0530] "GET /RegisterForm/reg.jsp HTTP/1.1" 200 546
+0:0:0:0:0:0:0:1 - - [30/Sep/2023:21:58:32 +0530] "POST /RegisterForm/RegisterServlet HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [30/Sep/2023:21:58:32 +0530] "GET /RegisterForm/registrationSuccess.jsp HTTP/1.1" 200 163
+0:0:0:0:0:0:0:1 - - [30/Sep/2023:21:58:45 +0530] "POST /RegisterForm/RegisterServlet HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [30/Sep/2023:21:58:45 +0530] "GET /RegisterForm/registrationSuccess.jsp HTTP/1.1" 200 163
+0:0:0:0:0:0:0:1 - - [30/Sep/2023:21:59:42 +0530] "POST /RegisterForm/RegisterServlet HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [30/Sep/2023:21:59:42 +0530] "GET /RegisterForm/registrationSuccess.jsp HTTP/1.1" 200 163

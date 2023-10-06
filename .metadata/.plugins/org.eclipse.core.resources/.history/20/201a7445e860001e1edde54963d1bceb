@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<style>
+        body {
+            background-image: url(https://static.pexels.com/photos/531880/pexels-photo-531880.jpeg);
+            background-size: cover; 
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+        <h2>Login</h2>
+        <div>
+        <form action="Loginservlet" method="post">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+            <p>Don't have an account? <a href="reg.jsp">Register here</a></p>
+        </form>
+        
+        <div class="image-container">
+            <img src="https://i.pinimg.com/736x/6b/1b/22/6b1b22573f9f3d4bba11a9fa5cb45652.jpg" alt="Image 1">
+        </div>
+        </div>
+    </div>
+</body>
+</html>

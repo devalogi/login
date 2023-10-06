@@ -1,0 +1,7 @@
+1696222193781	Move 'reg.jsp' to 'webapp'
+1696222203682	Move 'style.css' to 'webapp'
+1696222210201	Move 'registrationSuccess.jsp' to 'webapp'
+1696222215522	Move 'registrationFailure.jsp' to 'webapp'
+1696222252716	Move 'RegisterServlet.java' to 'login'
+1696222698359	Move 'reg.jsp' to 'webapp'
+1696222704313	Move 'registrationSuccess.jsp' to 'webapp'
